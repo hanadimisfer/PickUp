@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEE1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginTop="7dp"
+            android:background="#F1EEE1"
+            android:onClick="backB"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_navigate_before_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text=" Package size"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="34dp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="70dip"
+            android:layout_marginTop="7dp"
+            android:layout_height="50dip"
+            android:background="#F1EEE1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_foreground" />
+
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:layout_height="400dp"
+        tools:context=".PackejSize" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Choose the size that closest to your package size:"
+        android:textSize="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:onClick="pric"
+        android:textAlignment="center">
+
+        <RadioButton
+            android:id="@+id/small_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="radioBEvnet"
+            android:text="Small package(0~12 KG)"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/mid_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Medium package(13~25KG)"
+            android:onClick="radioBEvnet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/larg_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Large package(above 26 KG)"
+            android:onClick="radioBEvnet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18dp"></RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/priceT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18dp" />
+
+
+    <Button
+        android:id="@+id/confirmB"
+        android:layout_width="220dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="#F2CF0F"
+        android:onClick="nextP"
+        android:text="Confirm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFF"
+        android:textColorHighlight="#B5B50808"
+        android:textColorLink="#F8F7F2F2"
+        android:textSize="36dp"
+        android:textStyle="normal" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEE1"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="#F1EEE1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_home_black_24dp"/>
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Edit Account"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FD070707"
+            android:textSize="36sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="#F1EEE1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="690dp"
+        android:layout_marginLeft="25pt"
+        android:layout_marginTop="25pt"
+        android:layout_marginRight="25pt"
+        android:layout_marginBottom="70pt"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit your information here:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="First Name"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/fName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:text="Last Name"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/lName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:text="Phone"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:text="Password"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:text="Confirm Password"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/conPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="298dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+
+
+                android:layout_marginLeft="0dp"
+                android:background="#F2CF0F"
+                android:text="Edit"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#B5B50808"
+                android:textColorLink="#F8F7F2F2"
+                android:textSize="36sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/edirC_cancel"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+
+
+                android:layout_marginLeft="15dp"
+                android:background="#F2CF0F"
+                android:onClick="Cancel"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#B5B50808"
+                android:textColorLink="#F8F7F2F2"
+                android:textSize="36sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

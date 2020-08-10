@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1EEE1"
+    tools:context=".OrderCustomer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        >
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#F1EEE1"
+            android:onClick="backB"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_navigate_before_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:text=" Your orders"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="36dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="5dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            app:srcCompat="@mipmap/ic_launcher_foreground"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="13dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="Old orders"
+        android:textSize="22dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/from1T"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="From"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/from1T1"
+                android:layout_width="75dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="Almane hospital"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/to1T"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="To"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/to1T1"
+                android:layout_width="75dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="Almarczi hospitapl"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/price1T"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="Price"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/price1T1"
+                android:layout_width="60dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="209 SR"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/size1T"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="Size"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/size1T1"
+                android:layout_width="60dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="Small"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/drivenT"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="Driver"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/drivenT1"
+                android:layout_width="60dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="Ahmad"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

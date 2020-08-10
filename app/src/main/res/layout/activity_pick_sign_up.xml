@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/SIgnUptextView"
+            android:layout_width="162dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="119dp"
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:text="@string/sign"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/FirstNametextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="@string/first_name"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/NameeditText"
+            app:layout_constraintStart_toStartOf="@+id/NameeditText"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <EditText
+            android:id="@+id/NameeditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="17"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorLink="#B5B50808"
+            android:textCursorDrawable="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/LastNametextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstNametextView2" />
+        <TextView
+            android:id="@+id/LastNametextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="@string/last_name"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/lastNameeditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NameeditText" />
+
+        <EditText
+            android:id="@+id/lastNameeditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="17"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorLink="#B5B50808"
+            android:textCursorDrawable="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/EmailtextView"
+            app:layout_constraintStart_toStartOf="@+id/LastNametextView"
+            app:layout_constraintTop_toBottomOf="@+id/LastNametextView" />
+
+        <TextView
+            android:id="@+id/EmailtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="@string/email"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/EmaileditText"
+            app:layout_constraintStart_toStartOf="@+id/EmaileditText"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameeditText" />
+        <EditText
+            android:id="@+id/EmaileditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="17"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColorLink="#B5B50808"
+            android:textCursorDrawable="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/PhonetextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmailtextView" />
+        <TextView
+            android:id="@+id/PhonetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="@string/phone"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/PhoneeditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmaileditText" />
+
+        <EditText
+            android:id="@+id/PhoneeditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="17"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:textColorLink="#B5B50808"
+            android:textCursorDrawable="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/PasswordtextView"
+            app:layout_constraintStart_toStartOf="@+id/PhonetextView"
+            app:layout_constraintTop_toBottomOf="@+id/PhonetextView" />
+
+
+        <TextView
+            android:id="@+id/CartextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="CarType"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/PhoneeditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmaileditText" />
+
+        <EditText
+            android:id="@+id/CareditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="17"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorLink="#B5B50808"
+            android:textCursorDrawable="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/PasswordtextView"
+            app:layout_constraintStart_toStartOf="@+id/PhonetextView"
+            app:layout_constraintTop_toBottomOf="@+id/PhonetextView" />
+        <TextView
+            android:id="@+id/PlatetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="CarPlate"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/PhoneeditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmaileditText" />
+
+        <EditText
+            android:id="@+id/PCareditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="17"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorLink="#B5B50808"
+            android:textCursorDrawable="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/PasswordtextView"
+            app:layout_constraintStart_toStartOf="@+id/PhonetextView"
+            app:layout_constraintTop_toBottomOf="@+id/PhonetextView" />
+
+        <TextView
+            android:id="@+id/PasswordtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/password"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/PasswordeditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PhoneeditText" />
+        <EditText
+            android:id="@+id/PasswordeditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="17"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColorLink="#B5B50808"
+            android:textCursorDrawable="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/passwordtextView"
+            app:layout_constraintStart_toStartOf="@+id/PasswordtextView"
+            app:layout_constraintTop_toBottomOf="@+id/PasswordtextView" />
+        <TextView
+            android:id="@+id/passwordtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="Confirm Password"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/CpasswordeditText"
+            app:layout_constraintStart_toStartOf="@+id/PasswordeditText"
+            app:layout_constraintTop_toBottomOf="@+id/PasswordeditText" />
+        <EditText
+            android:id="@+id/CpasswordeditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:ems="17"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColorLink="#B5B50808"
+            android:textCursorDrawable="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@id/MoreButton"
+            app:layout_constraintStart_toStartOf="@+id/passwordtextView"
+            app:layout_constraintTop_toBottomOf="@+id/passwordtextView" />
+        <Button
+            android:id="@+id/MoreButton"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+            android:layout_width="157dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="14dp"
+            android:layout_gravity="center"
+            android:background="#F2CF0F"
+            android:onClick="onClick"
+            android:text="@string/sign"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#B5B50808"
+            android:textColorLink="#F8F7F2F2"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CpasswordeditText"
+            tools:targetApi="lollipop" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/already_have_an_account"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="157dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#B5B50808"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@id/MoreButton" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

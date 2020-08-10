@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEE1"
+    android:orientation="vertical"
+    tools:context=".OrderDrevir">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        android:background="#F1EEE1"
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="50dip"
+            android:layout_height="51dp"
+            android:background="#F1EEE1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_navigate_before_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:text="Orders Summery"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Old orders"
+        android:textSize="22dp"
+        />
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:background="#FFFF"
+        android:layout_marginLeft="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/from1T"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="From"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/from1T1"
+                android:layout_width="75dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text=""
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/to1T"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="To"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/to1T1"
+                android:layout_width="75dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text=""
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/price1T"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="Price"
+                android:textSize="23dp"
+                />
+            <TextView
+                android:id="@+id/price1T1"
+                android:layout_width="60dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text=""
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/size1T"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="Size"
+                android:textSize="23dp"
+                />
+
+            <TextView
+                android:id="@+id/size1T1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/drivenT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Rate"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

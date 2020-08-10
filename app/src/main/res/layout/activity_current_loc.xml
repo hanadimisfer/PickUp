@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEE1"
+    android:orientation="vertical"
+    android:layout_alignParentLeft="true"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginTop="7dp"
+            android:background="#F1EEE1"
+            android:onClick="backB"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_navigate_before_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text=" Your location"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="36dp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="70dip"
+            android:layout_marginTop="7dp"
+            android:layout_height="50dip"
+            android:background="#F1EEE1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_foreground" />
+
+
+
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="390dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:layout_height="480dp"
+        tools:context=".CurrentLoc" />
+
+    <TextView
+        android:id="@+id/infOfloca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="9dp"
+        android:textSize="28dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+        android:text="Your location:"
+        />
+
+    <TextView
+        android:id="@+id/yourloca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="7dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/confirmB"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#F2CF0F"
+        android:onClick="nextP"
+        android:text="Confirm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFF"
+        android:textColorHighlight="#B5B50808"
+        android:textColorLink="#F8F7F2F2"
+        android:textSize="36dp"
+        android:textStyle="normal" />
+
+</LinearLayout>
